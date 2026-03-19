@@ -8,5 +8,10 @@
   "packageManager": "pnpm@10.15.1",
   "engines": {
     "node": ">=22.19.0"
+  },
+  "devDependencies": {
+    "eslint": "^10.0.3",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3"
   }
 }
