@@ -1,0 +1,12 @@
+{
+  "name": "ddoblue-devkit",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "packageManager": "pnpm@10.15.1",
+  "engines": {
+    "node": ">=22.19.0"
+  }
+}
