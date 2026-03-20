@@ -17,6 +17,7 @@
     "node": ">=22.19.0"
   },
   "devDependencies": {
+    "@ddoblue/prettier-config": "workspace:*",
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
     "@commitlint/types": "^20.5.0",
