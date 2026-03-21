@@ -1,3 +1,3 @@
-import config from "@ddoblue/prettier-config";
+import config from '@ddoblue/prettier-config';
 
 export default config;
