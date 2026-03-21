@@ -16,6 +16,10 @@
     "prettier-config"
   ],
   "type": "module",
+  "files": [
+    "index.mjs",
+    "index.d.ts"
+  ],
   "exports": {
     ".": {
       "import": "./index.mjs",
@@ -24,5 +28,8 @@
   },
   "peerDependencies": {
     "prettier": "^3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
