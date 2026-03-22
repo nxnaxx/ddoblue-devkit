@@ -20,7 +20,6 @@ export const tsCoreRules = {
     'error',
     {
       allowShortCircuit: true,
-      allowTernary: true,
       allowTaggedTemplates: true,
     },
   ],
