@@ -17,12 +17,12 @@
   ],
   "type": "module",
   "files": [
-    "index.mjs",
+    "index.js",
     "index.d.ts"
   ],
   "exports": {
     ".": {
-      "import": "./index.mjs",
+      "import": "./index.js",
       "types": "./index.d.ts"
     }
   },
