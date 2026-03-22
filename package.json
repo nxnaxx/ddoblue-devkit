@@ -2,6 +2,7 @@
   "name": "ddoblue-devkit",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "turbo build",
     "lint": "eslint .",
