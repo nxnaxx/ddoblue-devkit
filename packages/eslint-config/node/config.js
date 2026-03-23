@@ -1,4 +1,5 @@
 import nodePlugin from 'eslint-plugin-n';
+
 import { nodeRules } from './rules/core.js';
 
 export const nodeConfig = [

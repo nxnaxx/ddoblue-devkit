@@ -1,8 +1,8 @@
 import tseslint from 'typescript-eslint';
 
 import { tsCoreRules } from './rules/core.js';
-import { typeAwareRules } from './rules/type-aware.js';
 import { tsNamingRules } from './rules/naming.js';
+import { typeAwareRules } from './rules/type-aware.js';
 
 export const typescriptConfig = [
   ...tseslint.configs.recommendedTypeChecked.map((config) => ({

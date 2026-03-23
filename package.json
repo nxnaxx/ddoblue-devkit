@@ -18,10 +18,11 @@
     "node": ">=22.19.0"
   },
   "devDependencies": {
-    "@ddoblue/prettier-config": "workspace:*",
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
     "@commitlint/types": "^20.5.0",
+    "@ddoblue/eslint-config": "workspace:*",
+    "@ddoblue/prettier-config": "workspace:*",
     "eslint": "^10.0.3",
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
@@ -31,7 +32,8 @@
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
-      "prettier --write"
+      "prettier --write",
+      "eslint --fix"
     ],
     "*.{json,md,yml,yaml,css,scss}": "prettier --write"
   }

@@ -1,4 +1,5 @@
 import nextPlugin from '@next/eslint-plugin-next';
+
 import { nextRules } from './rules/core.js';
 
 export const nextConfig = [
