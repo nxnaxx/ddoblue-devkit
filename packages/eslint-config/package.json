@@ -1,7 +1,47 @@
 {
   "name": "@ddoblue/eslint-config",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
+  "license": "ISC",
+  "author": "Raey",
+  "description": "Shared ESLint configuration",
+  "homepage": "https://github.com/nxnaxx/ddoblue-devkit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nxnaxx/ddoblue-devkit.git",
+    "directory": "packages/eslint-config"
+  },
+  "keywords": [
+    "ddoblue",
+    "eslint",
+    "eslint-config"
+  ],
+  "type": "module",
+  "files": [
+    "base",
+    "typescript",
+    "import",
+    "react",
+    "next",
+    "node",
+    "presets",
+    "index.js"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./base": "./base/index.js",
+    "./typescript": "./typescript/index.js",
+    "./import": "./import/index.js",
+    "./import/boundary": "./import/boundary-config.js",
+    "./react": "./react/index.js",
+    "./next": "./next/index.js",
+    "./node": "./node/index.js",
+    "./presets/react": "./presets/react.js",
+    "./presets/react-strict": "./presets/react-strict.js",
+    "./presets/next": "./presets/next.js",
+    "./presets/next-strict": "./presets/next-strict.js",
+    "./presets/node": "./presets/node.js",
+    "./presets/library": "./presets/library.js"
+  },
   "dependencies": {
     "@eslint/js": "^10.0.1",
     "@next/eslint-plugin-next": "^16.2.1",
@@ -16,5 +56,8 @@
   },
   "peerDependencies": {
     "eslint": ">=9"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
