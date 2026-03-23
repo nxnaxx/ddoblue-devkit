@@ -18,29 +18,72 @@
   "type": "module",
   "files": [
     "base",
-    "typescript",
     "import",
+    "typescript",
     "react",
     "next",
     "node",
     "presets",
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "exports": {
-    ".": "./index.js",
-    "./base": "./base/index.js",
-    "./typescript": "./typescript/index.js",
-    "./import": "./import/index.js",
-    "./import/boundary": "./import/boundary-config.js",
-    "./react": "./react/index.js",
-    "./next": "./next/index.js",
-    "./node": "./node/index.js",
-    "./presets/react": "./presets/react.js",
-    "./presets/react-strict": "./presets/react-strict.js",
-    "./presets/next": "./presets/next.js",
-    "./presets/next-strict": "./presets/next-strict.js",
-    "./presets/node": "./presets/node.js",
-    "./presets/library": "./presets/library.js"
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    },
+    "./base": {
+      "types": "./index.d.ts",
+      "import": "./base/index.js"
+    },
+    "./import": {
+      "types": "./index.d.ts",
+      "import": "./import/index.js"
+    },
+    "./import/boundary": {
+      "types": "./index.d.ts",
+      "import": "./import/boundary-config.js"
+    },
+    "./typescript": {
+      "types": "./index.d.ts",
+      "import": "./typescript/index.js"
+    },
+    "./react": {
+      "types": "./index.d.ts",
+      "import": "./react/index.js"
+    },
+    "./next": {
+      "types": "./index.d.ts",
+      "import": "./next/index.js"
+    },
+    "./node": {
+      "types": "./index.d.ts",
+      "import": "./node/index.js"
+    },
+    "./presets/react": {
+      "types": "./index.d.ts",
+      "import": "./presets/react.js"
+    },
+    "./presets/react-strict": {
+      "types": "./index.d.ts",
+      "import": "./presets/react-strict.js"
+    },
+    "./presets/next": {
+      "types": "./index.d.ts",
+      "import": "./presets/next.js"
+    },
+    "./presets/next-strict": {
+      "types": "./index.d.ts",
+      "import": "./presets/next-strict.js"
+    },
+    "./presets/node": {
+      "types": "./index.d.ts",
+      "import": "./presets/node.js"
+    },
+    "./presets/library": {
+      "types": "./index.d.ts",
+      "import": "./presets/library.js"
+    }
   },
   "dependencies": {
     "@eslint/js": "^10.0.1",
@@ -55,7 +98,8 @@
     "typescript-eslint": "^8.57.1"
   },
   "peerDependencies": {
-    "eslint": ">=9"
+    "eslint": "^9.0.0 || ^10.0.0",
+    "typescript": "^5.0.0"
   },
   "publishConfig": {
     "access": "public"
