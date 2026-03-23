@@ -1,3 +1,4 @@
+import js from '@eslint/js';
 import { coreRules } from './rules/core.js';
 
 export const baseConfig = [
