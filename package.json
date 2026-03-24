@@ -7,6 +7,8 @@
     "build": "turbo build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "lint:md": "markdownlint-cli2",
+    "lint:md:fix": "markdownlint-cli2 --fix",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "test": "turbo test",
@@ -22,10 +24,12 @@
     "@commitlint/config-conventional": "^20.5.0",
     "@commitlint/types": "^20.5.0",
     "@ddoblue/eslint-config": "workspace:*",
+    "@ddoblue/markdown-lint": "workspace:*",
     "@ddoblue/prettier-config": "workspace:*",
     "eslint": "^10.0.3",
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
+    "markdownlint-cli2": "^0.22.0",
     "prettier": "^3.8.1",
     "turbo": "^2.8.19",
     "typescript": "^5.9.3"
@@ -35,6 +39,10 @@
       "prettier --write",
       "eslint --fix"
     ],
-    "*.{json,jsonc,md,yml,yaml,css,scss}": "prettier --write"
+    "*.{json,jsonc,yml,yaml,css,scss}": "prettier --write",
+    "*.md": [
+      "markdownlint-cli2 --fix",
+      "prettier --write"
+    ]
   }
 }
