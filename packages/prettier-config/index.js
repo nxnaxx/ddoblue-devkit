@@ -18,6 +18,12 @@ const config = {
         printWidth: 80,
       },
     },
+    {
+      files: '*.jsonc',
+      options: {
+        trailingComma: 'none',
+      },
+    },
   ],
 };
 
