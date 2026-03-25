@@ -8,7 +8,7 @@ export const boundaryRules = {
           message: 'Use absolute imports instead of parent relative paths',
         },
         {
-          group: ['./*'],
+          group: ['./!(**/*.css|**/*.scss|**/*.sass)'],
           message: 'Avoid same-level relative imports; use alias',
         },
       ],
