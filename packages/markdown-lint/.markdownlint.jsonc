@@ -49,7 +49,7 @@
   },
   // MD050
   "strong-style": {
-    "style": "underscore"
+    "style": "asterisk"
   },
   // MD052
   "reference-links-images": {
