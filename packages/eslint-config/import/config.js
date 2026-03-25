@@ -16,6 +16,12 @@ export const importConfig = [
       'unused-imports': unusedImports,
     },
 
+    settings: {
+      'import/resolver': {
+        typescript: true,
+      },
+    },
+
     rules: {
       ...importRules,
       ...sortRules,
