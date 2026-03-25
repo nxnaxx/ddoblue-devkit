@@ -1,0 +1,43 @@
+{
+  "name": "next-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint:md": "markdownlint-cli2",
+    "lint:md:fix": "markdownlint-cli2 --fix",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "16.2.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@ddoblue/eslint-config": "workspace:*",
+    "@ddoblue/prettier-config": "workspace:*",
+    "@ddoblue/tsconfig": "workspace:*",
+    "@ddoblue/markdown-lint": "workspace:*",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{json,jsonc,yml,yaml,css,scss}": "prettier --write",
+    "*.md": [
+      "markdownlint-cli2 --fix",
+      "prettier --write"
+    ]
+  }
+}
