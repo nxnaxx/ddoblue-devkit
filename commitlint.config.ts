@@ -13,7 +13,15 @@ const ALLOWED_TYPES = [
   'perf',
 ];
 
-const ALLOWED_SCOPES = new Set(['eslint-config', 'markdown-lint', 'prettier-config', 'tsconfig']);
+const ALLOWED_SCOPES = new Set([
+  'eslint-config',
+  'markdown-lint',
+  'prettier-config',
+  'tsconfig',
+  'react',
+  'next',
+  'node',
+]);
 const REQUIRED_SCOPE_TYPES = new Set(['feat', 'fix', 'refactor', 'test', 'perf']);
 
 const Configuration: UserConfig = {
