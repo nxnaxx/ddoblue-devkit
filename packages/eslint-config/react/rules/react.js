@@ -11,4 +11,11 @@ export const reactRules = {
     },
   ],
   'react/jsx-sort-props': ['warn', { reservedFirst: true }],
+  'react/jsx-key': 'error',
+  'react/jsx-no-duplicate-props': 'error',
+  'react/jsx-no-undef': 'error',
+  'react/jsx-pascal-case': 'error',
+  'react/no-children-prop': 'error',
+  'react/no-danger-with-children': 'error',
+  'react/no-unescaped-entities': 'error',
 };

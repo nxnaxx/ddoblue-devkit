@@ -22,7 +22,6 @@ export const reactConfig = [
     },
 
     rules: {
-      ...reactPlugin.configs.flat.recommended.rules,
       ...reactHooks.configs.flat.recommended.rules,
       ...jsxA11y.configs.recommended.rules,
 
