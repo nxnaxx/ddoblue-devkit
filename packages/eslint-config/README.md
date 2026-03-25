@@ -79,23 +79,6 @@ export default [...base, ...typescript, ...imports, ...react];
 
 type-aware lint를 사용하므로 `tsconfig.json`이 필요합니다.
 
-### path alias
-
-TS path alias를 사용하는 경우, 프로젝트에서 다음과 같이 설정합니다:
-
-```js
-export default [
-  ...config,
-  {
-    settings: {
-      'import/resolver': {
-        typescript: true,
-      },
-    },
-  },
-];
-```
-
 ## Requirements
 
 - ESLint >=9
