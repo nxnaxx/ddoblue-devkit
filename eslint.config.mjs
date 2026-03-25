@@ -4,6 +4,14 @@ export default [
   ...config,
 
   {
-    ignores: ['dist', 'node_modules', '**/commitlint.config.ts', '**/*.d.ts'],
+    ignores: [
+      'dist',
+      'node_modules',
+      '**/commitlint.config.ts',
+      '**/*.d.ts',
+      '**/*.cjs',
+      'apps/*',
+      'packages/*',
+    ],
   },
 ];
