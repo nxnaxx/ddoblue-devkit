@@ -23,6 +23,7 @@
     "react",
     "next",
     "node",
+    "prettier",
     "presets",
     "index.js",
     "index.d.ts"
@@ -60,6 +61,10 @@
       "types": "./index.d.ts",
       "import": "./node/index.js"
     },
+    "./prettier": {
+      "types": "./index.d.ts",
+      "import": "./prettier/index.js"
+    },
     "./presets/react": {
       "types": "./index.d.ts",
       "import": "./presets/react.js"
@@ -88,6 +93,7 @@
   "dependencies": {
     "@eslint/js": "^10.0.1",
     "@next/eslint-plugin-next": "^16.2.1",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
