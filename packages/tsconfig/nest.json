@@ -3,6 +3,7 @@
   "extends": "./node.json",
   "compilerOptions": {
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "verbatimModuleSyntax": false
   }
 }
