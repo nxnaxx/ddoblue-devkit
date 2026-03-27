@@ -20,7 +20,7 @@ const ALLOWED_SCOPES = new Set([
   'tsconfig',
   'react',
   'next',
-  'node',
+  'nest',
 ]);
 const REQUIRED_SCOPE_TYPES = new Set(['feat', 'fix', 'refactor', 'test', 'perf']);
 

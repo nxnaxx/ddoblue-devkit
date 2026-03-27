@@ -1,0 +1,11 @@
+{
+  "extends": "@ddoblue/tsconfig/nest.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "paths": {
+      "@common/*": ["common/*"],
+      "@modules/*": ["modules/*"]
+    }
+  }
+}
