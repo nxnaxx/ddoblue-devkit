@@ -1,4 +1,4 @@
-import config from '@ddoblue/eslint-config/presets/node';
+import config from '@ddoblue/eslint-config';
 
 export default [
   ...config,

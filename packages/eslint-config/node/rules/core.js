@@ -1,5 +1,5 @@
 export const nodeRules = {
-  'no-console': 'error',
+  'no-console': ['error', { allow: ['warn', 'error'] }],
   'n/handle-callback-err': ['error', '^(err|error)$'],
   'n/no-path-concat': 'error',
   'n/no-unpublished-import': 'off',

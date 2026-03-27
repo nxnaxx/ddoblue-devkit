@@ -6,8 +6,16 @@ import typescriptConfig from '../typescript/index.js';
 
 export default [
   ...baseConfig,
+  ...nodeConfig,
+
+  {
+    rules: {
+      'n/no-missing-import': 'off',
+      'n/file-extension-in-import': 'off',
+    },
+  },
+
   ...typescriptConfig,
   ...importConfig,
-  ...nodeConfig,
   ...prettierConfig,
 ];
