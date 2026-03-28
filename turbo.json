@@ -12,6 +12,9 @@
     "lint:md": {
       "outputs": []
     },
+    "format": {
+      "outputs": []
+    },
     "type-check": {
       "outputs": []
     },
