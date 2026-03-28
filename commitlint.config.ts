@@ -21,6 +21,8 @@ const ALLOWED_SCOPES = new Set([
   'react',
   'next',
   'nest',
+  'root',
+  'turbo',
 ]);
 const REQUIRED_SCOPE_TYPES = new Set(['feat', 'fix', 'refactor', 'test', 'perf']);
 
