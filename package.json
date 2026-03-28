@@ -1,0 +1,52 @@
+{
+  "name": "ddoblue-devkit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "turbo dev --parallel",
+    "build": "turbo build",
+    "changeset": "changeset",
+    "release": "changeset publish",
+    "changeset-version": "changeset version",
+    "lint": "turbo lint && pnpm eslint .",
+    "lint:fix": "turbo lint:fix && eslint --fix .",
+    "lint:md": "turbo lint:md && pnpm markdownlint-cli2",
+    "lint:md:fix": "turbo lint:md:fix && pnpm markdownlint-cli2 --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "type-check": "turbo type-check",
+    "prepare": "husky"
+  },
+  "packageManager": "pnpm@10.15.1",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.30.0",
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "@commitlint/types": "^20.5.0",
+    "@ddoblue/eslint-config": "workspace:*",
+    "@ddoblue/markdown-lint": "workspace:*",
+    "@ddoblue/prettier-config": "workspace:*",
+    "eslint": "^10.0.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "markdownlint-cli2": "^0.22.0",
+    "prettier": "^3.8.1",
+    "turbo": "^2.8.19",
+    "typescript": "^5.9.3"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{json,jsonc,yml,yaml,css,scss}": "prettier --write",
+    "*.md": [
+      "markdownlint-cli2 --fix",
+      "prettier --write"
+    ]
+  }
+}

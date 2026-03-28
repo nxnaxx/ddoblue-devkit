@@ -1,0 +1,114 @@
+{
+  "name": "@ddoblue/eslint-config",
+  "version": "0.0.1",
+  "license": "ISC",
+  "author": "Raey",
+  "description": "Shared ESLint configuration",
+  "homepage": "https://github.com/nxnaxx/ddoblue-devkit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nxnaxx/ddoblue-devkit.git",
+    "directory": "packages/eslint-config"
+  },
+  "keywords": [
+    "ddoblue",
+    "eslint",
+    "eslint-config"
+  ],
+  "type": "module",
+  "files": [
+    "base",
+    "import",
+    "typescript",
+    "react",
+    "next",
+    "node",
+    "prettier",
+    "presets",
+    "index.js",
+    "index.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    },
+    "./base": {
+      "types": "./index.d.ts",
+      "import": "./base/index.js"
+    },
+    "./import": {
+      "types": "./index.d.ts",
+      "import": "./import/index.js"
+    },
+    "./import/boundary": {
+      "types": "./index.d.ts",
+      "import": "./import/boundary-config.js"
+    },
+    "./typescript": {
+      "types": "./index.d.ts",
+      "import": "./typescript/index.js"
+    },
+    "./react": {
+      "types": "./index.d.ts",
+      "import": "./react/index.js"
+    },
+    "./next": {
+      "types": "./index.d.ts",
+      "import": "./next/index.js"
+    },
+    "./node": {
+      "types": "./index.d.ts",
+      "import": "./node/index.js"
+    },
+    "./prettier": {
+      "types": "./index.d.ts",
+      "import": "./prettier/index.js"
+    },
+    "./presets/react": {
+      "types": "./index.d.ts",
+      "import": "./presets/react.js"
+    },
+    "./presets/react-strict": {
+      "types": "./index.d.ts",
+      "import": "./presets/react-strict.js"
+    },
+    "./presets/next": {
+      "types": "./index.d.ts",
+      "import": "./presets/next.js"
+    },
+    "./presets/next-strict": {
+      "types": "./index.d.ts",
+      "import": "./presets/next-strict.js"
+    },
+    "./presets/nest": {
+      "types": "./index.d.ts",
+      "import": "./presets/nest.js"
+    },
+    "./presets/library": {
+      "types": "./index.d.ts",
+      "import": "./presets/library.js"
+    }
+  },
+  "dependencies": {
+    "@eslint/js": "^10.0.1",
+    "@next/eslint-plugin-next": "^16.2.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-n": "^17.24.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "typescript-eslint": "^8.57.1"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0 || ^10.0.0",
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

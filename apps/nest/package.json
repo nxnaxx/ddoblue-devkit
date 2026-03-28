@@ -1,0 +1,52 @@
+{
+  "name": "nest-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development nest start --watch",
+    "build": "nest build",
+    "preview": "NODE_ENV=production node dist/main",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "lint:md": "markdownlint-cli2",
+    "lint:md:fix": "markdownlint-cli2 --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/config": "^4.0.3",
+    "@nestjs/core": "^10.0.0",
+    "@nestjs/platform-express": "^10.0.0",
+    "reflect-metadata": "^0.2.0",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@ddoblue/eslint-config": "workspace:*",
+    "@ddoblue/markdown-lint": "workspace:*",
+    "@ddoblue/prettier-config": "workspace:*",
+    "@ddoblue/tsconfig": "workspace:*",
+    "@nestjs/cli": "^10.0.0",
+    "@nestjs/schematics": "^10.0.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^20.3.1",
+    "eslint": "^10.0.3",
+    "source-map-support": "^0.5.21",
+    "ts-loader": "^9.4.3",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.1.3"
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{json,jsonc,yml,yaml}": "prettier --write",
+    "*.md": [
+      "markdownlint-cli2 --fix",
+      "prettier --write"
+    ]
+  }
+}

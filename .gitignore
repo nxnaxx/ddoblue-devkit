@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# pnpm workspace
+pnpm-debug.log*
+
+# Build Outputs
+dist/
+out/
+build
+.cache/
+.turbo/
+coverage/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+*.log
+.pnpm-debug.log*
+
+# OS
+.DS_Store
+
+# Testing
+coverage/
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+

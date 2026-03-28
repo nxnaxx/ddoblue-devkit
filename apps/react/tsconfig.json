@@ -1,0 +1,9 @@
+{
+  "extends": "@ddoblue/tsconfig/react.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src"]
+}
