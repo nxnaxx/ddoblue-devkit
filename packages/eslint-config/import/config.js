@@ -6,7 +6,7 @@ import { importRules } from './rules/core.js';
 import { sortRules } from './rules/sort.js';
 import { unusedImportRules } from './rules/unused.js';
 
-export const importConfig = [
+const importConfig = [
   {
     name: 'ddoblue/import',
 
@@ -29,3 +29,5 @@ export const importConfig = [
     },
   },
 ];
+
+export default importConfig;
