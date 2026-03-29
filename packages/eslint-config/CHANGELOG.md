@@ -1,5 +1,11 @@
 # @ddoblue/eslint-config
 
+## 0.2.0
+
+### Minor Changes
+
+- a14ff7b: update import order rule
+
 ## 0.1.0
 
 ### Minor Changes
