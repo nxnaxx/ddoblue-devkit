@@ -1,5 +1,11 @@
 # @ddoblue/eslint-config
 
+## 0.2.1
+
+### Patch Changes
+
+- 216066e: apply missing import order rule change
+
 ## 0.2.0
 
 ### Minor Changes
