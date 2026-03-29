@@ -8,7 +8,7 @@ export const tsNamingRules = {
     },
     {
       selector: 'variable',
-      format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
+      format: ['camelCase', 'UPPER_CASE'],
     },
     {
       selector: 'function',
