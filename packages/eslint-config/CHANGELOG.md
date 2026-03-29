@@ -1,5 +1,13 @@
 # @ddoblue/eslint-config
 
+## 0.3.0
+
+### Minor Changes
+
+- e3b64a4: - update TypeScript naming convention rule to allow PascalCase for variables
+  - add Storybook configuration support
+  - update README
+
 ## 0.2.1
 
 ### Patch Changes
