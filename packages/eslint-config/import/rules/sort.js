@@ -5,13 +5,13 @@ export const sortRules = {
     {
       groups: [
         ['^\\u0000'],
+        ['^.+\\.(css|scss|svg|png|jpg|jpeg|gif)$'],
         ['^node:'],
         ['^react', '^next'],
         ['^@?\\w'],
         ['^@/'],
         ['^\\.\\./'],
         ['^\\.'],
-        ['^.+\\.(css|scss|svg|png|jpg|jpeg|gif)$'],
       ],
     },
   ],
