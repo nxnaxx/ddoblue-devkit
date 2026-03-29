@@ -1,5 +1,11 @@
 # @ddoblue/eslint-config
 
+## 0.3.1
+
+### Patch Changes
+
+- c19c27b: add missing Storybook plugin import
+
 ## 0.3.0
 
 ### Minor Changes
