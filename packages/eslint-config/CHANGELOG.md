@@ -1,5 +1,12 @@
 # @ddoblue/eslint-config
 
+## 0.4.0
+
+### Minor Changes
+
+- 633741f: - Fix duplicate type import errors when composing multiple configs
+  - Provide more accurate and isolated type definitions per config
+
 ## 0.3.1
 
 ### Patch Changes
