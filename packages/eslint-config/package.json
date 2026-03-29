@@ -16,83 +16,77 @@
     "eslint-config"
   ],
   "type": "module",
+  "scripts": {
+    "build": "pnpm run clean && pnpm tsup",
+    "clean": "rm -rf dist"
+  },
   "files": [
-    "base",
-    "import",
-    "typescript",
-    "react",
-    "next",
-    "node",
-    "prettier",
-    "storybook",
-    "presets",
-    "index.js",
-    "index.d.ts"
+    "dist"
   ],
   "exports": {
     ".": {
-      "types": "./index.d.ts",
-      "import": "./index.js"
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     },
     "./base": {
-      "types": "./index.d.ts",
-      "import": "./base/index.js"
-    },
-    "./import": {
-      "types": "./index.d.ts",
-      "import": "./import/index.js"
-    },
-    "./import/boundary": {
-      "types": "./index.d.ts",
-      "import": "./import/boundary-config.js"
+      "import": "./dist/base.js",
+      "types": "./dist/base.d.ts"
     },
     "./typescript": {
-      "types": "./index.d.ts",
-      "import": "./typescript/index.js"
+      "import": "./dist/typescript.js",
+      "types": "./dist/typescript.d.ts"
+    },
+    "./import": {
+      "import": "./dist/import.js",
+      "types": "./dist/import.d.ts"
+    },
+    "./import/boundary": {
+      "import": "./dist/import/boundary.js",
+      "types": "./dist/import/boundary.d.ts"
     },
     "./react": {
-      "types": "./index.d.ts",
-      "import": "./react/index.js"
+      "import": "./dist/react.js",
+      "types": "./dist/react.d.ts"
     },
     "./next": {
-      "types": "./index.d.ts",
-      "import": "./next/index.js"
+      "import": "./dist/next.js",
+      "types": "./dist/next.d.ts"
     },
     "./node": {
-      "types": "./index.d.ts",
-      "import": "./node/index.js"
+      "import": "./dist/node.js",
+      "types": "./dist/node.d.ts"
     },
     "./prettier": {
-      "types": "./index.d.ts",
-      "import": "./prettier/index.js"
+      "import": "./dist/prettier.js",
+      "types": "./dist/prettier.d.ts"
     },
     "./storybook": {
-      "types": "./index.d.ts",
-      "import": "./storybook/index.js"
+      "import": "./dist/storybook.js",
+      "types": "./dist/storybook.d.ts"
     },
     "./presets/react": {
-      "types": "./index.d.ts",
-      "import": "./presets/react.js"
+      "import": "./dist/presets/react.js",
+      "types": "./dist/presets/react.d.ts"
     },
     "./presets/react-strict": {
-      "types": "./index.d.ts",
-      "import": "./presets/react-strict.js"
+      "import": "./dist/presets/react-strict.js",
+      "types": "./dist/presets/react-strict.d.ts"
     },
     "./presets/next": {
-      "types": "./index.d.ts",
-      "import": "./presets/next.js"
+      "import": "./dist/presets/next.js",
+      "types": "./dist/presets/next.d.ts"
     },
     "./presets/next-strict": {
-      "types": "./index.d.ts",
-      "import": "./presets/next-strict.js"
+      "import": "./dist/presets/next-strict.js",
+      "types": "./dist/presets/next-strict.d.ts"
     },
     "./presets/nest": {
-      "types": "./index.d.ts",
-      "import": "./presets/nest.js"
+      "import": "./dist/presets/nest.js",
+      "types": "./dist/presets/nest.d.ts"
     },
     "./presets/library": {
-      "types": "./index.d.ts",
-      "import": "./presets/library.js"
+      "import": "./dist/presets/library.js",
+      "types": "./dist/presets/library.d.ts"
     }
   },
   "dependencies": {
@@ -109,6 +103,9 @@
     "eslint-plugin-storybook": "^10.3.3",
     "eslint-plugin-unused-imports": "^4.4.1",
     "typescript-eslint": "^8.57.1"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1"
   },
   "peerDependencies": {
     "eslint": "^9.0.0 || ^10.0.0",
