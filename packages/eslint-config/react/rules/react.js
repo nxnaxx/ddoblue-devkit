@@ -10,7 +10,15 @@ export const reactRules = {
       checkLocalVariables: true,
     },
   ],
-  'react/jsx-sort-props': ['warn', { reservedFirst: true }],
+  'react/jsx-sort-props': [
+    'warn',
+    {
+      reservedFirst: true,
+      shorthandFirst: true,
+      callbacksLast: true,
+      noSortAlphabetically: true,
+    },
+  ],
   'react/jsx-key': 'error',
   'react/jsx-no-duplicate-props': 'error',
   'react/jsx-no-undef': 'error',
