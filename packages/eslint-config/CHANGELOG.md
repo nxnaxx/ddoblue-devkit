@@ -1,5 +1,14 @@
 # @ddoblue/eslint-config
 
+## 0.5.0
+
+### Minor Changes
+
+- 27c6933: update react/jsx-sort-props rule
+  - group shorthand props first
+  - place callback props last
+  - disable alphabetical sorting
+
 ## 0.4.0
 
 ### Minor Changes
