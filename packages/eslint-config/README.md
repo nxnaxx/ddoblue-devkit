@@ -56,6 +56,27 @@ import config from '@ddoblue/eslint-config/presets/next';
 export default config;
 ```
 
+모노레포의 경우 아래 예시와 같이 `settings.next.rootDir`를 명시해야 합니다.
+
+```js
+import next from '@ddoblue/eslint-config/presets/next';
+import { defineConfig, globalIgnores } from 'eslint/config';
+
+const eslintConfig = defineConfig([
+  ...next,
+
+  {
+    settings: {
+      next: {
+        rootDir: ['apps/web'],
+      },
+    },
+  },
+]);
+
+export default eslintConfig;
+```
+
 #### Nest
 
 ```js
