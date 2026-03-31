@@ -11,12 +11,6 @@ export const nextConfig = [
       '@next/next': nextPlugin,
     },
 
-    settings: {
-      next: {
-        rootDir: true,
-      },
-    },
-
     rules: {
       ...nextPlugin.configs.recommended.rules,
       ...nextPlugin.configs['core-web-vitals'].rules,

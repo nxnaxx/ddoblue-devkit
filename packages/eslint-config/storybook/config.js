@@ -1,4 +1,5 @@
 import storybook from 'eslint-plugin-storybook';
+
 import { storybookCoreRules } from './rules/core.js';
 import { storybookReactRules } from './rules/storybook-react.js';
 

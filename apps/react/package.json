@@ -29,16 +29,5 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
     "vite": "^8.0.1"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx}": [
-      "prettier --write",
-      "eslint --fix"
-    ],
-    "*.{json,jsonc,yml,yaml,css,scss}": "prettier --write",
-    "*.md": [
-      "markdownlint-cli2 --fix",
-      "prettier --write"
-    ]
   }
 }
