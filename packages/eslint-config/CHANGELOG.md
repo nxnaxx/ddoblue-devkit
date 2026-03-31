@@ -1,5 +1,28 @@
 # @ddoblue/eslint-config
 
+## 0.6.0
+
+### Minor Changes
+
+- c04202d: Remove `settings.next.rootDir` from Next preset
+
+  After this change:
+  - consumers can configure `settings.next.rootDir` based on their project structure
+
+  #### Migration
+
+  If needed, configure `settings.next.rootDir` in your root ESLint config.
+
+  ```js
+  {
+    settings: {
+      next: {
+        rootDir: 'packages/my-app/',
+      },
+    },
+  }
+  ```
+
 ## 0.5.0
 
 ### Minor Changes
