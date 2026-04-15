@@ -1,5 +1,11 @@
 # @ddoblue/tsconfig
 
+## 0.3.0
+
+### Minor Changes
+
+- ab6b1c5: Change the library preset module system from `ESNext` + `Bundler` to `NodeNext` + `NodeNext`.
+
 ## 0.2.0
 
 ### Minor Changes
