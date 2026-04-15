@@ -1,6 +1,6 @@
 {
   "name": "@ddoblue/tsconfig",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "author": "Raey",
   "description": "Shared TypeScript configuration",
