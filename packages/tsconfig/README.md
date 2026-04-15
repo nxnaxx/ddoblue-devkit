@@ -125,4 +125,4 @@ NestJS 환경을 위한 preset입니다.
 
 ## License
 
-ISC
+MIT

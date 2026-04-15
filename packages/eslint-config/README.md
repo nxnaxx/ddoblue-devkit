@@ -130,4 +130,4 @@ ESLint는 코드 품질과 구조에 집중하며, formatting 충돌은 prettier
 
 ## License
 
-ISC
+MIT

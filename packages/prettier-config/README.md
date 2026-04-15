@@ -60,4 +60,4 @@ ESLint와 함께 사용할 경우, `eslint-config-prettier`를 통해 충돌을 
 
 ## License
 
-ISC
+MIT
