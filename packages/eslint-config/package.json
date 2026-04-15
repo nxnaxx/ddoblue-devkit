@@ -1,7 +1,7 @@
 {
   "name": "@ddoblue/eslint-config",
   "version": "0.6.0",
-  "license": "ISC",
+  "license": "MIT",
   "author": "Raey",
   "description": "Shared ESLint configuration",
   "homepage": "https://github.com/nxnaxx/ddoblue-devkit",
